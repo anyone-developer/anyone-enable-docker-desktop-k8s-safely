@@ -1,6 +1,9 @@
-# `Docker Desktop for Mac` 开启并使用 `Kubernetes`
+# `Docker Desktop` 更加安全地开启并使用 `Kubernetes`
 
-[![github workflow](https://github.com/maguowei/k8s-docker-desktop-for-mac/workflows/k8s%20image%20sync/badge.svg)](https://github.com/maguowei/k8s-docker-desktop-for-mac/actions)
+## **【分叉说明】**
+原作者使用github repo在这：https://github.com/maguowei/k8s-docker-desktop-for-mac 他写的bat和sh脚本都要从他的gotok8s下，去下载他同步好的k8s镜像，然后再重命名为官方的镜像，**【你能保证他同步的镜像没有安装后门？】** 所以我还是改一下他的脚本，直接一键下载官方k8s镜像，在咱们国内只要设置国内镜像源，就可以下载了。**【大家小心别被搞了！！！】**
+
+## **【以下为原repo内容】**
 
 `Docker Desktop` 可以方便的启用 `Kubernetes` 集群, 为学习 `Kubernetes` 提供了极大的便利, 但是由于众所周知的原因, 国内的网络下不能很方便的下载 `Kubernetes` 集群所需要的镜像, 导致集群启用失败. 这里提供了一个简单的方法, 利用 [GitHub Actions](https://developer.github.com/actions/creating-github-actions/) 实现 `k8s.gcr.io` 上 `kubernetes` 依赖镜像自动同步到 [Docker Hub](https://hub.docker.com/) 上指定的仓库中。 通过 [load_images.sh](./load_images.sh) 将所需镜像从 `Docker Hub` 的同步仓库中取回，并重新打上原始的`tag`. 镜像对应关系文件可以查看: [images](./images).
 
