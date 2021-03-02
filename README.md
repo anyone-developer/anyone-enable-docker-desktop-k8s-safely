@@ -1,7 +1,9 @@
 # `Docker Desktop` 更加安全地开启并使用 `Kubernetes`
 
 ## **【分叉说明】**
-原作者使用github repo在这：https://github.com/maguowei/k8s-docker-desktop-for-mac 他写的bat和sh脚本都要从他的gotok8s下，去下载他同步好的k8s镜像，然后再重命名为官方的镜像，**【你能保证他同步的镜像没有安装后门？】** 所以我还是改一下他的脚本，直接一键下载官方k8s镜像，在咱们国内只要设置国内镜像源，就可以下载了。**【大家小心别被搞了！！！】**
+原作者使用github repo在这：https://github.com/maguowei/k8s-docker-desktop-for-mac 
+
+他写的bat和sh脚本都要从他的gotok8s下，去下载他同步好的k8s镜像，然后再重命名为官方的镜像，**【你能保证他同步的镜像没有安装后门？】** 所以我还是改一下他的脚本，直接一键下载官方k8s镜像，在咱们国内只要设置国内镜像源，就可以下载了。**【大家小心别被搞了！！！】**
 
 ## **【以下为原repo内容】**
 
